@@ -1,0 +1,21 @@
+antigen use oh-my-zsh
+
+antigen bundles <<EOBUNDLES
+	autoupdate
+	command-not-found
+	cp
+	extract
+	iterm2
+	jsontools
+	nvm
+	ssh-agent
+	z
+	zsh_reload
+	chrissicool/zsh-256color
+	zsh-users/zsh-autosuggestions
+	lukechilds/zsh-better-npm-completion
+	zsh-users/zsh-syntax-highlighting
+EOBUNDLES
+
+antigen theme geometry-zsh/geometry
+antigen apply

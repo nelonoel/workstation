@@ -1,0 +1,65 @@
+{
+	"animation_enabled": false,
+	"caret_extra_bottom": 1,
+	"caret_extra_width": 1,
+	"caret_style": "phase",
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
+	"drag_text": false,
+	"draw_minimap_border": false,
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		".git",
+		"yarn.lock"
+	],
+	"folder_exclude_patterns":
+	[
+		"build",
+		"_refs",
+		"dist",
+		".cache",
+		".next",
+		".gradle",
+		".jdk-overlay",
+		".tmp",
+		".git",
+		"cache/",
+		".meteor",
+		".sass-cache",
+		"node_modules",
+		"bower_components",
+		"_site",
+		"rethinkdb_data"
+	],
+	"font_face": "Dank Mono",
+	"font_options":
+	[
+		"no_round",
+		"subpixel_antialias"
+	],
+	"font_size": 14,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
+	"preview_on_click": true,
+	"scroll_past_end": true,
+	"scroll_speed": 5.0,
+	"shell_environment": false,
+	"show_full_path": false,
+	"show_minimap": false,
+	"tab_size": 2,
+	"theme": "ayu-dark.sublime-theme",
+	"translate_tabs_to_spaces": false,
+	"tree_animation_enabled": false,
+	"trim_trailing_white_space_on_save": true,
+	"word_separators": "./\\()\"'-_:,.;<>~!@#$%^&*|+=[]{}`~?",
+	"word_wrap": false
+}

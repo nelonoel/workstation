@@ -1,0 +1,12 @@
+export NVM_DIR="$HOME/.nvm"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+GEOMETRY_STATUS_SYMBOL="⚡︎"
+GEOMETRY_STATUS_SYMBOL_ERROR="☔︎"
+GEOMETRY_STATUS_COLOR_ERROR="blue"
+GEOMETRY_STATUS_COLOR="yellow"
+
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+[ -s "/usr/local/share/antigen/antigen.zsh" ] && . "/usr/local/share/antigen/antigen.zsh"
+antigen init ~/.antigenrc

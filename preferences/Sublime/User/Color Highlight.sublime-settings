@@ -1,0 +1,9 @@
+/*
+	Color Highlight user settings in here override the default
+*/
+{
+	"user": {
+		"highlight_values": false,
+		"named_values": false,
+	}
+}
