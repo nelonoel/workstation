@@ -7,7 +7,11 @@
 	delete-merged = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 	discard-changes = "!git stash -u && git stash drop"
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
-	locals = branch --l
-	remotes = branch --r
+	push-upstream = "!f() { B=`git rev-parse --abbrev-ref HEAD`; git push --set-upstream origin \"$B\":\"$B\"; }; f"
+	locals = "!git branch --l | cat"
+	remotes = "!git branch --r | cat"
 	track = "!f() { git checkout --track \"origin/$1\"; }; f"
 	whoami = config user.email
+	whereami = rev-parse --abbrev-ref HEAD
+[core]
+	editor = subl -n -w
