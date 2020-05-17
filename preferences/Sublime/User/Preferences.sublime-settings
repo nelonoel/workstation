@@ -1,10 +1,11 @@
 {
 	"animation_enabled": false,
+	"auto_complete": false,
 	"caret_extra_bottom": 1,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
+	"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
 	"drag_text": false,
 	"draw_minimap_border": false,
 	"file_exclude_patterns":
@@ -15,6 +16,8 @@
 	],
 	"folder_exclude_patterns":
 	[
+		".idea",
+		"__sapper__",
 		"build",
 		"_refs",
 		"dist",

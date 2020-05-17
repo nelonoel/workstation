@@ -1,0 +1,26 @@
+[
+  {
+    "class": "sidebar_label",
+    "font.face": "Dank Mono"
+  },
+  {
+    "class": "sidebar_heading",
+    "font.face": "Dank Mono"
+  },
+  {
+    "class": "tab_label",
+    "font.face": "Dank Mono"
+  },
+  {
+    "class": "label_control",
+    "font.face": "Dank Mono"
+  },
+  {
+    "class": "quick_panel_label",
+    "font.face": "Dank Mono"
+  },
+  {
+    "class": "quick_panel_path_label",
+    "font.face": "Dank Mono"
+  }
+]
