@@ -1,0 +1,10 @@
+export ZPLUG_HOME="$HOME/.zplug"
+source ~/.zplug/init.zsh
+source ~/.zplugrc
+
+export PATH="./.workstation/node_modules/.bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && source "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+source '/usr/local/opt/nvm/nvm.sh'
+
+eval "$(command rbenv init -)"

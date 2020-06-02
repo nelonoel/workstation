@@ -1,0 +1,67 @@
+# Taps
+tap 'homebrew/cask'
+tap 'homebrew/bundle'
+
+# Binaries
+brew 'act'
+brew 'awscli'
+brew 'bash'
+brew 'circleci'
+brew 'coreutils'
+brew 'fswatch'
+brew 'fzf'
+brew 'git'
+brew 'gnupg2'
+brew 'grep'
+brew 'httpie'
+brew 'hub'
+brew 'imagemagick'
+brew 'mackup'
+brew 'mas'
+brew 'node'
+brew 'nvm'
+brew 'rbenv'
+brew 'terraform'
+brew 'tig'
+brew 'tree'
+brew 'zlib'
+brew 'zsh'
+brew 'zsh-completions'
+
+# Apps
+cask '1password'
+cask 'alfred'
+cask 'authy'
+cask 'caprine'
+cask 'chromium'
+cask 'docker'
+cask 'figma'
+cask 'firefox'
+cask 'freedom'
+cask 'google-chrome'
+cask 'hazel'
+cask 'iterm2'
+cask 'journey'
+cask 'karabiner-elements'
+cask 'ledger-live'
+cask 'notion'
+cask 'postman'
+cask 'rectangle'
+cask 'sketch'
+cask 'skyfonts'
+cask 'slack'
+cask 'sublime-text'
+cask 'timemator'
+cask 'yt-music'
+
+# Quicklook
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'qlstephen'
+cask 'quicklook-csv'
+cask 'quicklook-json'
+
+# Mac App Store
+mas 'Spark', id: 1176895641
+mas 'Things', id: 904280696
+mas 'Xcode', id: 497799835

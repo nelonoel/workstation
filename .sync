@@ -1,0 +1,19 @@
+#!/bin/sh
+if test ! $(which brew); then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+brew update
+brew tap homebrew/bundle
+brew bundle
+
+xcode-select --install
+mkdir ~/Screenshots
+
+rm -rf $HOME/.gitignore_global && ln -s $HOME/.workstation/.gitignore_global $HOME/.gitignore_global
+rm -rf $HOME/.hushlogin && ln -s $HOME/.workstation/.hushlogin $HOME/.hushlogin
+rm -rf $HOME/.mackup.cfg && ln -s $HOME/.workstation/.mackup.cfg $HOME/.mackup.cfg
+rm -rf $HOME/.zplugrc && ln -s $HOME/.workstation/.zplugrc $HOME/.zplugrc
+rm -rf $HOME/.zshrc && ln -s $HOME/.workstation/.zshrc $HOME/.zshrc
+
+source .macos

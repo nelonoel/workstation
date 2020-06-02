@@ -1,0 +1,40 @@
+# Terminal
+alias sudo="sudo "
+alias cl="clear"
+alias ding="tput bel"
+alias localip="ipconfig getifaddr en0"
+alias grep='grep --color=auto'
+alias map="xargs -n1"
+alias path='echo -e ${PATH//:/\\n}'
+alias prettify="json_pp"
+alias zp="zplug"
+alias ..="cd .."
+
+# macOS
+alias empty_trash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+alias hide_files="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias show_all_files="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+
+# Theme
+alias lights_on="iterm2_profile Light"
+alias lights_off="iterm2_profile Dark"
+
+# Bundler
+alias b="bundle"
+
+# Sublime
+alias s="subl"
+
+# NPM
+alias n="npm"
+alias ni="npm install"
+alias ns="npm start"
+alias nr="npm run"
+alias nb="npm run build"
+alias nd="npm run dev"
+alias nt="npm run test"
+
+# Git
+alias standup="git-standup -d 7"
+alias g="git"
+alias gs="git status -s"

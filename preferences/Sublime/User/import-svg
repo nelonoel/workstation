@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-{{#def.import('modules/icons/icon-${1:name}.svg')}}
-]]></content>
-	<tabTrigger>svg</tabTrigger>
-	<scope>source.dot</scope>
-</snippet>
