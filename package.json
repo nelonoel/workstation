@@ -17,8 +17,6 @@
   },
   "homepage": "https://github.com/nelonoel/workstation#readme",
   "devDependencies": {
-    "chromedriver": "^83.0.0",
-    "chromium": "^2.1.2",
     "fast-cli": "^2.3.0",
     "git-standup": "^2.3.2",
     "netlify-cli": "^2.52.0",

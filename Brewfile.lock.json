@@ -2,16 +2,10 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "deb1ddebe049643ac35126849c1d18721b843ad0"
-      },
-      "homebrew/cask-fonts": {
-        "revision": "3e93231d86881b095892284d081505105a8725d1"
-      },
-      "homebrew/cask-versions": {
-        "revision": "69360600d5d0d580751f3b5d0996ad5d5ca9ea55"
+        "revision": "a50215dae81d06d5f77a6b68394b27396d06511d"
       },
       "homebrew/bundle": {
-        "revision": "02ebae92a26ee231c009f8637205d7c274cfedb4"
+        "revision": "28b0663f70b4956dc9cd10798f636eaaa3750fa3"
       }
     },
     "brew": {
@@ -494,6 +488,12 @@
           "full_name": "caprine"
         }
       },
+      "chromedriver": {
+        "version": "83.0.4103.39",
+        "options": {
+          "full_name": "chromedriver"
+        }
+      },
       "chromium": {
         "version": "773221",
         "options": {
@@ -534,12 +534,6 @@
         "version": "4.4.4",
         "options": {
           "full_name": "hazel"
-        }
-      },
-      "iconjar": {
-        "version": "2.3.0,38894",
-        "options": {
-          "full_name": "iconjar"
         }
       },
       "iterm2": {
@@ -588,6 +582,12 @@
         "version": "63.1-92452",
         "options": {
           "full_name": "sketch"
+        }
+      },
+      "skyfonts": {
+        "version": "5.9.5.6",
+        "options": {
+          "full_name": "skyfonts"
         }
       },
       "slack": {
@@ -643,18 +643,6 @@
         "options": {
           "full_name": "quicklook-json"
         }
-      },
-      "font-inter": {
-        "version": "3.13",
-        "options": {
-          "full_name": "font-inter"
-        }
-      },
-      "skyfonts": {
-        "version": "5.9.5.6",
-        "options": {
-          "full_name": "skyfonts"
-        }
       }
     },
     "mas": {
@@ -675,12 +663,12 @@
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.3.0-16-g0305001",
+        "HOMEBREW_VERSION": "2.3.0-21-g7db771b",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "1ff58a4b04754a8c8b6ede653f93290e9a24f4dd",
+        "Homebrew/homebrew-core": "ddd39cf1b71452bfe9c5f17f45cc0118796b20d3",
         "CLT": "1103.0.32.59",
         "Xcode": "11.5",
-        "macOS": "10.15.4"
+        "macOS": "10.15.5"
       }
     }
   }
