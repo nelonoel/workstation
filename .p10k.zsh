@@ -352,7 +352,7 @@
     if (( $1 )); then
       # Styling for up-to-date Git status.
       local       meta='%f'    # default foreground
-      local     branch='%240F' # branch foreground
+      local     branch='%6F' # branch foreground
       local      clean='%2F'   # green foreground
       local   modified='%3F'   # yellow foreground
       local  untracked='%4F'   # blue foreground
@@ -360,7 +360,7 @@
     else
       # Styling for incomplete and stale Git status.
       local       meta='%8F'  # grey foreground
-      local     branch='%240F' # branch foreground
+      local     branch='%6F' # branch foreground
       local      clean='%8F'  # grey foreground
       local   modified='%8F'  # grey foreground
       local  untracked='%8F'  # grey foreground
@@ -403,7 +403,7 @@
     # ⇢42 if ahead of the push remote; no leading space if also behind: ⇠42⇢42.
     (( VCS_STATUS_PUSH_COMMITS_AHEAD  )) && res+="${clean}⇢${VCS_STATUS_PUSH_COMMITS_AHEAD}"
     # *42 if have stashes.
-    (( VCS_STATUS_STASHES        )) && res+=" ${clean}*${VCS_STATUS_STASHES}"
+    (( VCS_STATUS_STASHES        )) && res+=" ${clean}·${VCS_STATUS_STASHES}"
     # 'merge' if the repo is in an unusual state.
     [[ -n $VCS_STATUS_ACTION     ]] && res+=" ${conflicted}${VCS_STATUS_ACTION}"
     # ~42 if have merge conflicts.
