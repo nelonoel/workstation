@@ -351,14 +351,16 @@
 
     if (( $1 )); then
       # Styling for up-to-date Git status.
-      local       meta='%f'     # default foreground
+      local       meta='%f'    # default foreground
+      local     branch='%240F' # branch foreground
       local      clean='%2F'   # green foreground
-      local   modified='%3F'  # yellow foreground
+      local   modified='%3F'   # yellow foreground
       local  untracked='%4F'   # blue foreground
-      local conflicted='%1F'  # red foreground
+      local conflicted='%1F'   # red foreground
     else
       # Styling for incomplete and stale Git status.
       local       meta='%8F'  # grey foreground
+      local     branch='%240F' # branch foreground
       local      clean='%8F'  # grey foreground
       local   modified='%8F'  # grey foreground
       local  untracked='%8F'  # grey foreground
@@ -379,7 +381,7 @@
     # Otherwise show the first 12 … the last 12.
     # Tip: To always show local branch name in full without truncation, delete the next line.
     (( $#where > 32 )) && where[13,-13]="…"
-    res+="${clean}${where//\%/%%}"  # escape %
+    res+="${branch}${where//\%/%%}"  # escape %
 
     # Display the current Git commit if there is no branch or tag.
     # Tip: To always display the current Git commit, remove `[[ -z $where ]] &&` from the next line.
