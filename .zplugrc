@@ -13,8 +13,10 @@ zplug "sei40kr/zsh-fast-alias-tips", from:gh-r, as:command, rename-to:def-matche
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zdharma/fast-syntax-highlighting"
+zplug "mafredri/zsh-async", from:github
 
-zplug "geometry-zsh/geometry", as:theme
+# zplug "geometry-zsh/geometry", as:theme
+zplug romkatv/powerlevel10k, as:theme, depth:1
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
