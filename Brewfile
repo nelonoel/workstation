@@ -45,6 +45,7 @@ cask 'hey'
 cask 'iterm2'
 cask 'journey'
 cask 'karabiner-elements'
+cask 'kindle'
 cask 'ledger-live'
 cask 'notion'
 cask 'pocket-casts'
@@ -56,6 +57,8 @@ cask 'slack'
 cask 'sublime-merge'
 cask 'sublime-text'
 cask 'timemator'
+cask 'vivaldi'
+cask 'visual-studio-code'
 cask 'yt-music'
 
 # Quicklook
@@ -67,5 +70,6 @@ cask 'quicklook-json'
 
 # Mac App Store
 mas 'Spark', id: 1176895641
+mas 'Surfshark', id: 1437809329
 mas 'Things', id: 904280696
 mas 'Xcode', id: 497799835
