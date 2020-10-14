@@ -1,6 +1,6 @@
 [user]
 	name = Aaron Noel De Leon
-	email = aaronnoeldeleon@gmail.com
+	email = here@nelo.is
 [alias]
 	aliases = config --get-regexp alias
 	amend = commit --amend --reuse-message=HEAD
@@ -13,6 +13,6 @@
 	track = "!f() { git checkout --track \"origin/$1\"; }; f"
 	whoami = config user.email
 [core]
-	editor = subl -n -w
+	editor = code
 [pull]
 	rebase = false
