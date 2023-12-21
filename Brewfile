@@ -33,8 +33,8 @@ brew 'zsh'
 brew 'zsh-completions'
 
 # Fonts
-brew 'font-inter'
-brew 'font-roboto-mono'
+cask 'font-inter'
+cask 'font-roboto-mono'
 
 # Apps
 cask '1password'
