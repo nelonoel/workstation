@@ -15,18 +15,13 @@ alias empty_trash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo
 alias hide_files="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias show_all_files="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 
-# iTerm
-alias ayu_light="iterm2_profile Light"
-alias ayu_dark="iterm2_profile Dark"
-alias ayu_mirage="iterm2_profile Mirage"
-
 # Bundler
 alias b="bundle"
 
 # Sublime
 alias s="subl"
 
-# NPM
+# npm
 alias n="npm"
 alias ni="npm install"
 alias ns="npm start"
@@ -34,6 +29,14 @@ alias nr="npm run"
 alias nb="npm run build"
 alias nd="npm run dev"
 alias nt="npm run test"
+
+# pnpm
+alias p="pnpm"
+alias pi="pnpm install"
+alias pr="npm run"
+alias pd="npm run dev"
+alias pt="npm run test"
+alias ptp="pnpm run test:playwright"
 
 # Git
 alias standup="git-standup -d 7"

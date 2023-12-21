@@ -1,6 +1,8 @@
 # Taps
 tap 'homebrew/cask'
 tap 'homebrew/bundle'
+tap 'homebrew/cask-fonts'
+tap '1password/tap'
 
 # Binaries
 brew 'act'
@@ -18,59 +20,75 @@ brew 'hub'
 brew 'imagemagick'
 brew 'mackup'
 brew 'mas'
+brew 'pyenv'
 brew 'node'
-brew 'nvm'
 brew 'rbenv'
+brew 'rename'
 brew 'terraform'
 brew 'tig'
 brew 'tree'
+brew 'volta'
 brew 'zlib'
 brew 'zsh'
 brew 'zsh-completions'
 
+# Fonts
+brew 'font-inter'
+brew 'font-roboto-mono'
+
 # Apps
 cask '1password'
-cask 'alfred'
-cask 'authy'
-cask 'caprine'
+cask '1password-cli'
+cask '8bitdo-ultimate-software'
+cask 'arc'
+cask 'audio-hijack'
+cask 'bartender'
 cask 'chromedriver'
 cask 'chromium'
+cask 'cleanshot'
+cask 'dash'
 cask 'discord'
 cask 'docker'
+cask 'fig'
 cask 'figma'
-cask 'firefox'
 cask 'freedom'
-cask 'google-chrome'
+cask 'google-drive'
 cask 'hazel'
-cask 'hey'
 cask 'iterm2'
-cask 'journey'
 cask 'karabiner-elements'
-cask 'kindle'
 cask 'ledger-live'
+cask 'linear-linear'
+cask 'loopback'
+cask 'monitorcontrol'
 cask 'notion'
 cask 'pocket-casts'
 cask 'postman'
-cask 'rectangle'
-cask 'sketch'
-cask 'skyfonts'
-cask 'slack'
-cask 'sublime-merge'
-cask 'sublime-text'
-cask 'timemator'
-cask 'vivaldi'
-cask 'visual-studio-code'
-cask 'yt-music'
-
-# Quicklook
 cask 'qlcolorcode'
 cask 'qlmarkdown'
 cask 'qlstephen'
+cask 'qmk-toolbox'
 cask 'quicklook-csv'
 cask 'quicklook-json'
+cask 'react-native-debugger'
+cask 'rectangle'
+cask 'sizzy'
+cask 'slack'
+cask 'sparrow'
+cask 'sublime-merge'
+cask 'sublime-text'
+cask 'surfshark'
+cask 'the-unarchiver'
+cask 'via'
+cask 'visual-studio-code'
+cask 'zoom'
 
 # Mac App Store
+mas 'iA Writer', id: 775737590
 mas 'Spark', id: 1176895641
-mas 'Surfshark', id: 1437809329
 mas 'Things', id: 904280696
 mas 'Xcode', id: 497799835
+
+# Safari Extensions
+mas '1Password for Safari', id: 1569813296
+mas 'Dark Reader for Safari', id: 1438243180
+mas 'JSONPeep', id: 1458969831

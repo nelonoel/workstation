@@ -1,18 +1,30 @@
 [user]
 	name = Aaron Noel De Leon
 	email = here@nelo.is
+	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDPD5FE4UFUluUETeUuME1QAzSb9bzw/mC0lACQNqYAw+ltAlgt0ISFLPA67knA7VR/vqvHhAVQuohd0kvaPgVaYaLdOHDbNMoQAkpoY8V7aAnv8HCJh69m8ueNXUZdYqP5fcEYH+sUtpL933WjCY3i2+Iur1CzZbBaBQaaKkSAfMc9QOny8OPBzaFIFKMmCGi0m1hFG3s6+/leX3vruO7/cgaeUgwMQ1x134NkL0TkhIgUFgvbpXWvCi4RFd0Hhb/DUxXu06Qjz92VIaiVfTF/OtUzy8kfDjXlzZRGiJmAqji+H6UBE3q7N0i2yuGfzoy6Hxau8I5T2J9cts5TYxVwuv7+DiuT0pCMchEBZeSIap7q+d7ksq7/k33rReigB/Mi3vG46JaqVibBHptsbbD769y7GqR7aoLZe5vcc7T4qqKtUgw4JrHeZGYXyEFyF4qf6m8Rr9U7RkSKy/9VM27kWftD1HtgfjvOt3VkGBvP4QxLmgYaCo3ihi8V4iFG76AcSpOz+eG5j1z6nzedh5uGeq9o9kj1Ba62PIyYwjlq8ZN02wzCuK/pi2svLP47/0P2Y7fcPDEhM6A0SwT83/PptI7VPZ1/s/yVHT+63hfd5Kh+0Jr8froNdEzuhKGuxGRqMjJVXuj3oOptm3WjuWty15vV8K8wbOk04/7+bE3/rw==
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = true
 [alias]
 	aliases = config --get-regexp alias
 	amend = commit --amend --reuse-message=HEAD
 	delete-merged = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 	discard-changes = "!git stash -u && git stash drop"
+	copy-branch = "git rev-parse --abbrev-ref HEAD | pbcopy"
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 	locals = "!git branch --l | cat"
-	push-upstream = "!f() { B=`git rev-parse --abbrev-ref HEAD`; git push --set-upstream origin \"$B\":\"$B\"; }; f"
+	push-origin = "!f() { B=`git rev-parse --abbrev-ref HEAD`; git push --set-upstream origin \"$B\":\"$B\"; }; f"
+	pull-origin = "!f() { B=`git rev-parse --abbrev-ref HEAD`; git pull origin \"$B\"; }; f"
 	remotes = "!git branch --r | cat"
 	track = "!f() { git checkout --track \"origin/$1\"; }; f"
 	whoami = config user.email
+	stash-all = stash -u
 [core]
-	editor = code
+	editor = vi
 [pull]
 	rebase = false
+[init]
+	defaultBranch = main

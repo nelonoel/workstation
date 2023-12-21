@@ -18,17 +18,14 @@ function benchmark() {
 
 function update() {
 	sudo softwareupdate -i -a;
+
 	brew update;
 	brew upgrade;
 	brew cleanup;
 
-	sudo gem update --system;
-	sudo gem update;
 	sudo gem cleanup;
 
-	cd ~/.workstation;
-	npm install npm -g;
-	npm update;
+	zplug update
 }
 
 function print_colors() {

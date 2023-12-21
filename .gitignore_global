@@ -38,3 +38,6 @@ Thumbs.db
 .idea/
 .vscode
 .vagrant/
+
+# Projects
+node_modules/
