@@ -61,6 +61,7 @@ cask 'linear-linear'
 cask 'loopback'
 cask 'monitorcontrol'
 cask 'notion'
+cask 'openemu'
 cask 'pocket-casts'
 cask 'postman'
 cask 'qlcolorcode'
@@ -69,6 +70,7 @@ cask 'qlstephen'
 cask 'qmk-toolbox'
 cask 'quicklook-csv'
 cask 'quicklook-json'
+cask 'raycast'
 cask 'react-native-debugger'
 cask 'rectangle'
 cask 'sizzy'
@@ -84,7 +86,8 @@ cask 'zoom'
 
 # Mac App Store
 mas 'iA Writer', id: 775737590
-mas 'Spark', id: 1176895641
+mas 'Endel', id: 1346247457
+mas 'Luminar Neo', id: 1584373150
 mas 'Things', id: 904280696
 mas 'Xcode', id: 497799835
 
