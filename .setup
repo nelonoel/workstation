@@ -7,6 +7,7 @@ brew update
 brew bundle
 
 xcode-select --install
+
 mkdir ~/Screenshots
 
 rm -rf $HOME/.gitconfig && ln -s $HOME/.workstation/.gitconfig $HOME/.gitconfig
@@ -17,4 +18,10 @@ rm -rf $HOME/.zplugrc && ln -s $HOME/.workstation/.zplugrc $HOME/.zplugrc
 rm -rf $HOME/.spaceshiprc.zsh && ln -s $HOME/.workstation/.spaceshiprc.zsh $HOME/.spaceshiprc.zsh
 rm -rf $HOME/.zshrc && ln -s $HOME/.workstation/.zshrc $HOME/.zshrc
 
+mackup restore -f
+
 source .macos
+
+volta install node
+volta install pnpm
+

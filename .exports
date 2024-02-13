@@ -1,4 +1,3 @@
-export ZPLUG_HOME="$HOME/.zplug"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export VOLTA_HOME="$HOME/.volta"
@@ -6,10 +5,10 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export SSH_AUTH_SOCK="$HOME/.1password/agent.sock"
 export PNPM_HOME="/Users/aaronnoeldeleon/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
 
-source ~/.zplug/init.zsh
+source $ZPLUG_HOME/init.zsh
 source ~/.zplugrc
-source "$HOME/.cargo/env"
 
 eval "$(ssh-agent -s)" &> /dev/null
 eval "$(command rbenv init -)"
